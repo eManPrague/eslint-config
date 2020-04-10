@@ -1,0 +1,34 @@
+{
+  "name": "@emanprague/eslint-config",
+  "version": "1.0.0",
+  "description": "ESlint and prettier configurations",
+  "main": "eslint-config.js",
+  "repository": "https://github.com/eManPrague/eslint-config.git",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "rm -rf dist && mkdir dist && cp prettier-config.js dist/ && cp eslint-default.js dist/ && cp tslint.json dist/"
+  },
+  "keywords": [
+    "tslint",
+    "shared",
+    "rules"
+  ],
+  "author": "Augustin Sulc <augustin.sulc@eman.cz>",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.0",
+    "tslint": "^5.14.0",
+    "tslint-sonarts": "^1.9.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
