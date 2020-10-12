@@ -1,6 +1,6 @@
 {
   "name": "@emanprague/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESlint and prettier configurations",
   "main": "eslint-config.js",
   "repository": "https://github.com/eManPrague/eslint-config.git",
@@ -19,9 +19,9 @@
   "author": "Augustin Sulc <augustin.sulc@eman.cz>",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.18.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^2.18.0",
-    "@typescript-eslint/parser": "^2.18.0",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.0",
