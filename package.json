@@ -1,6 +1,6 @@
 {
   "name": "@emanprague/eslint-config",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "ESlint and prettier configurations",
   "main": "eslint-config.js",
   "repository": "https://github.com/eManPrague/eslint-config.git",
@@ -12,7 +12,7 @@
     "dist": "rm -rf dist && mkdir dist && cp prettier-config.js dist/ && cp eslint-default.js dist/"
   },
   "keywords": [
-    "tslint",
+    "eslint",
     "shared",
     "rules"
   ],
@@ -25,7 +25,7 @@
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-prettier": "^3.2.0",
     "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-typescript": "^0.14.0"
+    "eslint-plugin-sonarjs": "^0.5.0"
   },
   "peerDependencies": {
     "eslint": "^7.15.0",
