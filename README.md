@@ -38,3 +38,9 @@ Update config files as follows:
 ### `.prettierrc.js`
 
     module.exports = require("@emanprague/eslint-config/prettier-config");
+
+And you should be good to go with:
+
+```console
+eslint \"./src/**/*.{ts,tsx}\" --cache
+```
