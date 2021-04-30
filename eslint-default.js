@@ -20,6 +20,7 @@ module.exports = {
   ],
   rules: {
     curly: ["error", "all"],
+    "no-unneeded-ternary": "error",
     "no-redeclare": "off", // warns on typescript function overrides
     //"@typescript-eslint/no-redeclare": ["error"], // this should be enabled, but causes 'Definition for rule '@typescript-eslint/no-redeclare' was not found'
 
@@ -31,10 +32,23 @@ module.exports = {
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": [
-      1,
+      "warn",
       { args: "none", ignoreRestSiblings: true },
     ],
     "@typescript-eslint/no-use-before-define": "off", // disabled because it can report incorrect errors https://stackoverflow.com/a/64024916/19712
+    "@typescript-eslint/consistent-type-imports": "warn",
+    "@typescript-eslint/no-confusing-non-null-assertion": "error",
+    "@typescript-eslint/no-unnecessary-condition": [
+      "error",
+      { allowConstantLoopConditions: true },
+    ],
+    "@typescript-eslint/non-nullable-type-assertion-style": "warn",
+    "@typescript-eslint/prefer-for-of": "warn",
+    "@typescript-eslint/prefer-includes": "warn",
+    "@typescript-eslint/prefer-nullish-coalescing": "warn",
+    "@typescript-eslint/prefer-optional-chain": "warn",
+    "@typescript-eslint/prefer-reduce-type-parameter": "warn",
+    "@typescript-eslint/no-throw-literal": "error",
   },
   settings: {
     react: {
