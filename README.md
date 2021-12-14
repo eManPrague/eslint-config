@@ -6,6 +6,8 @@ Inspired by https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-types
 
 ## Versions
 
+eslint-config v3 supports ESlint 8.
+
 eslint-config v2 requires ESlint 7.
 
 Use eslint-config v1 for ESlint 6 + TSlint.
