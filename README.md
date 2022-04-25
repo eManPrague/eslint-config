@@ -16,7 +16,7 @@ Use eslint-config v1 for ESlint 6 + TSlint.
 
 Install ESlint:
 
-    yarn add eslint @emanprague/eslint-config -D
+    yarn add eslint prettier @emanprague/eslint-config -D
 
 Update config files as follows:
 
@@ -28,7 +28,7 @@ Update config files as follows:
       ],
       settings: {
         react: {
-          version: "latest",
+          version: "detect",
         },
       },
       env: {
