@@ -1,6 +1,6 @@
 {
   "name": "@emanprague/eslint-config",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "ESlint and prettier configurations",
   "main": "eslint-config.js",
   "repository": "https://github.com/eManPrague/eslint-config.git",

@@ -46,3 +46,10 @@ And you should be good to go with:
 ```console
 eslint \"./src/**/*.{ts,tsx}\" --cache
 ```
+
+# Contribution
+
+How to release:
+ 1. manually set version in package.json
+ 1. push
+ 1. create a new release in GH
