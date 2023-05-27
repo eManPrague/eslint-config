@@ -47,6 +47,11 @@ And you should be good to go with:
 eslint \"./src/**/*.{ts,tsx}\" --cache
 ```
 
+Note that instead of creating the `.prettierrc.js` file, you can just add the following row to your `package.json` file.
+
+    "prettier": "@emanprague/eslint-config/prettier-config",
+
+
 # Contribution
 
 How to release:
