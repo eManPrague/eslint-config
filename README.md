@@ -41,16 +41,17 @@ Update config files as follows:
 
     module.exports = require("@emanprague/eslint-config/prettier-config");
 
+Note that instead of creating the `.prettierrc.js` file, you can just add the following row to your `package.json` file.
+
+    "prettier": "@emanprague/eslint-config/prettier-config",
+
+---
+
 And you should be good to go with:
 
 ```console
 eslint \"./src/**/*.{ts,tsx}\" --cache
 ```
-
-Note that instead of creating the `.prettierrc.js` file, you can just add the following row to your `package.json` file.
-
-    "prettier": "@emanprague/eslint-config/prettier-config",
-
 
 # Contribution
 
