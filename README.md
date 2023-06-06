@@ -33,7 +33,6 @@ Update config files as follows:
       },
       env: {
         browser: true,
-        jest: true,
       },
     };
 

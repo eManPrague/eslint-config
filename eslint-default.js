@@ -28,6 +28,7 @@ module.exports = {
     "react/prop-types": "off",
     "react/display-name": "off",
     "react/jsx-curly-brace-presence": ["error", "never"],
+    "react/react-in-jsx-scope": "off",
     "eslint-comments/no-unused-disable": "error",
     "eslint-comments/disable-enable-pair": ["error", {"allowWholeFile": true}],
 
@@ -40,6 +41,7 @@ module.exports = {
     ],
     "@typescript-eslint/no-use-before-define": "off", // disabled because it can report incorrect errors https://stackoverflow.com/a/64024916/19712
     "@typescript-eslint/consistent-type-imports": "warn",
+    "@typescript-eslint/consistent-type-exports": "warn",
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "@typescript-eslint/no-unnecessary-condition": [
       "error",
