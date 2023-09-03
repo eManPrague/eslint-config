@@ -50,7 +50,12 @@ module.exports = {
     "@typescript-eslint/non-nullable-type-assertion-style": "warn",
     "@typescript-eslint/prefer-for-of": "warn",
     "@typescript-eslint/prefer-includes": "warn",
-    "@typescript-eslint/prefer-nullish-coalescing": "warn",
+    "@typescript-eslint/prefer-nullish-coalescing": [
+      "warn",
+      {
+        ignoreConditionalTests: true,
+      },
+    ],
     "@typescript-eslint/prefer-optional-chain": "warn",
     "@typescript-eslint/prefer-reduce-type-parameter": "warn",
     "@typescript-eslint/no-throw-literal": "error",
