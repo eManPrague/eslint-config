@@ -11,10 +11,17 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:eslint-comments/recommended",
-    "plugin:jest/recommended",
     "plugin:sonarjs/recommended",
     "plugin:prettier/recommended", // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
     "prettier", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
+  ],
+  overrides: [
+    {
+      files: ["*.test.{ts,tsx}"],
+      rules: {
+        "sonarjs/no-duplicate-string": "off",
+      },
+    },
   ],
   rules: {
     curly: ["error", "all"],
@@ -38,7 +45,6 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/no-redeclare": ["error"],
     "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": ["warn"],

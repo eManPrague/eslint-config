@@ -5,10 +5,11 @@ module.exports = {
       jsx: true, // Allows for the parsing of JSX
     },
   },
-  plugins: ["react"],
+  plugins: ["react", "vitest"],
   extends: [
     "plugin:react/recommended",
     "plugin:storybook/recommended",
+    "plugin:vitest/recommended",
     "./eslint-default.js",
   ],
   rules: {

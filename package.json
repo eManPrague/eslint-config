@@ -1,6 +1,6 @@
 {
   "name": "@emanprague/eslint-config",
-  "version": "3.4.0",
+  "version": "4.0.0",
   "description": "ESlint and prettier configurations",
   "main": "eslint-config.js",
   "repository": "https://github.com/eManPrague/eslint-config.git",
@@ -29,6 +29,7 @@
     "eslint-plugin-sonarjs": "^0.23.0",
     "eslint-plugin-storybook": "^0.6.15",
     "eslint-plugin-unused-imports": "^3.0.0",
+    "eslint-plugin-vitest": "^0.3.20",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
