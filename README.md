@@ -6,6 +6,8 @@ Inspired by https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-types
 
 ## Versions
 
+eslint-config v4 refactor rules and divide config for node and react
+
 eslint-config v3 supports ESlint 8.
 
 eslint-config v2 requires ESlint 7.
@@ -20,11 +22,13 @@ Install ESlint:
 
 Update config files as follows:
 
+(use correct config, eslint-node for backend and eslint-react for frontend)
+
 ### `.eslintrc.js`
 
     module.exports = {
       extends: [
-        "@emanprague/eslint-config/eslint-default"
+        "@emanprague/eslint-config/eslint-[node|react]"
       ],
       settings: {
         react: {
@@ -34,15 +38,7 @@ Update config files as follows:
       env: {
         browser: true,
       },
-    };
-
-### `.prettierrc.js`
-
-    module.exports = require("@emanprague/eslint-config/prettier-config");
-
-Note that instead of creating the `.prettierrc.js` file, you can just add the following row to your `package.json` file.
-
-    "prettier": "@emanprague/eslint-config/prettier-config",
+    }
 
 ---
 
@@ -55,6 +51,7 @@ eslint \"./src/**/*.{ts,tsx}\" --cache
 # Contribution
 
 How to release:
- 1. manually set version in package.json
- 1. push
- 1. create a new release in GH
+
+1.  manually set version in package.json
+1.  push
+1.  create a new release in GH
