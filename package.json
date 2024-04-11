@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dist": "rm -rf dist && mkdir dist && cp prettier-config.js dist/ && cp eslint-default.js dist/"
+    "dist": "rm -rf dist && mkdir dist && cp eslint-*.js dist/"
   },
   "keywords": [
     "eslint",
