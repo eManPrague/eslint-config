@@ -17,7 +17,7 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ["*.test.{ts,tsx}"],
+      files: ["*.{test,stories}.{ts,tsx}"],
       rules: {
         "sonarjs/no-duplicate-string": "off",
       },
@@ -27,17 +27,6 @@ module.exports = {
     curly: ["error", "all"],
     "no-console": "warn",
     "no-unneeded-ternary": "error",
-
-    "prettier/prettier": [
-      "error",
-      {
-        trailingComma: "es5",
-        bracketSameLine: true,
-        endOfLine: "auto",
-        printWidth: 130,
-        arrowParens: "avoid",
-      },
-    ],
 
     "eslint-comments/no-unused-disable": "error",
     "eslint-comments/disable-enable-pair": ["error", { allowWholeFile: true }],
