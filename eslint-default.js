@@ -5,7 +5,7 @@ module.exports = {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
     sourceType: "module", // Allows for the use of imports
   },
-  plugins: ["@typescript-eslint", "sonarjs", "unused-imports"],
+  plugins: ["@typescript-eslint", "sonarjs", "unused-imports", "prefer-arrow"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -70,5 +70,35 @@ module.exports = {
     "@typescript-eslint/prefer-reduce-type-parameter": "warn",
     "@typescript-eslint/no-throw-literal": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
+    "@typescript-eslint/no-non-null-assertion": "error",
+    "prefer-arrow-callback": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "builtin",
+          "external",
+          ["parent", "sibling"],
+          "index",
+          "object",
+        ],
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: true,
+        },
+        "newlines-between": "always",
+      },
+    ],
+    "import/no-default-export": "error",
+    "@typescript-eslint/array-type": "error",
+    "prefer-arrow/prefer-arrow-functions": [
+      "error",
+      {
+        disallowPrototype: true,
+        singleReturnOnly: false,
+        classPropertiesAllowed: false,
+      },
+    ],
   },
 };
